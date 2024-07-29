@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+img {
+  transition: all ease 0.5s;
+}

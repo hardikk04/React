@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: refokus;
+  src: url("/fonts/font.woff2");
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body:has(.icey_modal.icey_active) {
+  overflow-y: hidden;
+  padding-right: var(--scrollbar_width);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(35, 35, 35, 0.7);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.ff {
+  font-family: refokus;
+}
+
+.marque {
+  position: relative;
+  animation: marque 30s linear infinite both;
+}
+
+.m {
+  position: relative;
+  animation: marque 15s linear infinite both;
+}
+
+@keyframes marque {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

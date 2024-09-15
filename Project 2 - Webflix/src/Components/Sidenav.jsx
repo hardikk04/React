@@ -16,29 +16,47 @@ function Sidenav() {
           <i className="ri-fire-fill mr-2"></i>
           Trending
         </Link>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/popular"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="ri-sparkling-fill mr-2"></i>
           Popular
         </Link>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/movie"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="mr-2 ri-movie-2-fill"></i>
           Movies
         </Link>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/tvshow"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="mr-2 ri-tv-2-fill"></i>Tv Shows
         </Link>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/people"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="mr-2 ri-team-fill"></i>People
         </Link>
       </nav>
       <hr className="border-gray-600" />
       <nav className="mt-[2vw] text-2xl flex flex-col">
         <h1 className="font-[500] mb-[1vw]">Website Informations</h1>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/about"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="ri-information-fill mr-2"></i>
           About WebFlix
         </Link>
-        <Link className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500">
+        <Link
+          to="/contact"
+          className="inline-block p-5 text-zinc-400 hover:bg-[#6556cd] hover:text-white duration-500"
+        >
           <i className="ri-phone-fill mr-2"></i>
           Contact Us
         </Link>

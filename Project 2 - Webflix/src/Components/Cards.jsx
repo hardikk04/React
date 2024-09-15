@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 function Cards({ data }) {
-  console.log(data);
-
   return (
     <div className=" w-full h-full bg-[#1F1E24] overflow-hidden flex flex-wrap justify-center gap-[3vw]">
       {data.map((d, i) => {
@@ -14,7 +13,7 @@ function Cards({ data }) {
               src={
                 d.backdrop_path || d.profile_path
                   ? `https://image.tmdb.org/t/p/original/${
-                      d.backdrop_path || d.profile_path
+                      d.poster_path || d.backdrop_path || d.profile_path
                     }`
                   : "/noImg.png"
               }

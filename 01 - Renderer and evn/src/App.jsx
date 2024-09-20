@@ -1,7 +1,6 @@
-import React from "react"
+import React from 'react'
 
 function App() {
-  const a = 1
   return (
     <div className="w-full h-screen flex justify-center items-center flex-col">
       <h1>Hello</h1>

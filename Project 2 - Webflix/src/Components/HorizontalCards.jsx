@@ -7,7 +7,7 @@ function HorizontalCards({ data }) {
       {data.map((d, i) => {
         return (
           <Link
-            to={`${d.media_type}/details/${d.id}`}
+            to={d.media_type ? `/${d.media_type}/details/${d.id}` : "/"}
             key={i}
             className="w-[16%] h-full bg-zinc-900 shrink-0"
           >

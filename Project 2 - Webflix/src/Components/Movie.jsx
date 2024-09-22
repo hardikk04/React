@@ -58,7 +58,7 @@ function Movie() {
         hasMore={true}
         loader={<h1>Loading...</h1>}
       >
-        <Cards data={movie}></Cards>
+        <Cards data={movie} title={"movie"}></Cards>
       </InfiniteScroll>
     </div>
   ) : (

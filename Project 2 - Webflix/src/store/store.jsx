@@ -5,8 +5,8 @@ import tvSlice from "./reducers/tvSlice";
 
 export const store = configureStore({
   reducer: {
-    movie: tvSlice,
-    tv: personSlice,
-    person: movieSlice,
+    movie: movieSlice,
+    tv: tvSlice,
+    person: personSlice,
   },
 });

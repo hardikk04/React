@@ -42,6 +42,7 @@ function Topnav() {
         {queryResult.map((q, i) => {
           return (
             <Link
+              to={`/${q.media_type}/details/${q.id}`}
               key={i}
               className="hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600 p-10 flex justt items-center border-b-2 border-zinc-100 gap-[2vw]"
             >

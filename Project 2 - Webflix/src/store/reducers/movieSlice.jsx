@@ -18,6 +18,6 @@ export const movieSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { loadMovie,removeMovie } = movieSlice.actions;
+export const { loadMovie, removeMovie } = movieSlice.actions;
 
 export default movieSlice.reducer;
